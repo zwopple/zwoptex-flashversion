@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<s:Application xmlns:fx="http://ns.adobe.com/mxml/2009" xmlns:s="library://ns.adobe.com/flex/spark" xmlns:mx="library://ns.adobe.com/flex/halo" minWidth="1024" minHeight="1046" width="1024" height="1046" addedToStage="application1_addedToStageHandler(event)" xmlns:mx1="library://ns.adobe.com/flex/mx">
+
+	<fx:Style source="Zwoptex.css"/>
+	
+	<mx1:MenuBar x="0" y="0" width="1024" labelField="@label" id="menuBar"/>
+	
+	<fx:Script>
+		<![CDATA[
+			
+			import com.zwopple.zwoptex.*;
+
+			protected function application1_addedToStageHandler(event:Event):void
+			{
+				event.target.parent.addChild(new Main(menuBar));
+			}
+
+		]]>
+	</fx:Script>
+	
+</s:Application>
